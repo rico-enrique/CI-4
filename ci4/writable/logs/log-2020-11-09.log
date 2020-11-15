@@ -1,0 +1,10 @@
+CRITICAL - 2020-11-09 03:38:44 --> Undefined variable: kategori
+#0 C:\xampp\htdocs\restoran-ci4\ci4\app\Views\menu\update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\Common.php(1087): CodeIgniter\View\View->render('menu/update', Array, true)
+#3 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Menu.php(109): view('menu/update', Array)
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Menu->find('18')
+#5 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Menu))
+#6 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

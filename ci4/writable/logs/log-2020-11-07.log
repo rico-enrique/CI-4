@@ -1,0 +1,27 @@
+CRITICAL - 2020-11-07 10:42:13 --> Undefined index: page_page
+#0 C:\xampp\htdocs\restoran-ci4\ci4\app\Views\kategori\select.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\Common.php(1087): CodeIgniter\View\View->render('kategori/select', Array, true)
+#3 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Kategori.php(28): view('kategori/select', Array)
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Kategori->read()
+#5 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kategori))
+#6 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-07 10:42:28 --> Undefined index: page_page
+#0 C:\xampp\htdocs\restoran-ci4\ci4\app\Views\kategori\select.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\Common.php(1087): CodeIgniter\View\View->render('kategori/select', Array, true)
+#3 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Kategori.php(28): view('kategori/select', Array)
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Kategori->read()
+#5 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kategori))
+#6 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-07 11:14:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Kategori.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 69, Array)
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Kategori->update()
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kategori))
+#3 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,8 @@
+CRITICAL - 2020-06-17 21:39:47 --> Class 'app\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\restoran-ci4\ci4\system\Router\Router.php(575): include_once()
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Admin/kategori')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Admin/kategori')
+#3 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

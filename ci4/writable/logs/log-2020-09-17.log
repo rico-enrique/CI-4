@@ -1,0 +1,10 @@
+CRITICAL - 2020-09-17 01:53:53 --> Illegal string offset 'kategori'
+#0 C:\xampp\htdocs\restoran-ci4\ci4\app\Views\kategori\select.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\Common.php(1087): CodeIgniter\View\View->render('kategori/select', Array, true)
+#3 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Kategori.php(54): view('kategori/select', Array)
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Kategori->find('52')
+#5 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kategori))
+#6 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

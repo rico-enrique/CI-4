@@ -1,0 +1,24 @@
+CRITICAL - 2020-09-11 21:37:48 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `tb...')
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\BaseBuilder.php(2836): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\Model.php(952): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Kategori.php(64): CodeIgniter\Model->delete(Array)
+#6 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Kategori->delete('65')
+#7 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kategori))
+#8 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-11 21:39:11 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `tb...')
+#1 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\restoran-ci4\ci4\system\Database\BaseBuilder.php(2836): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\restoran-ci4\ci4\system\Model.php(952): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\restoran-ci4\ci4\app\Controllers\Admin\Kategori.php(64): CodeIgniter\Model->delete(Array)
+#6 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(914): App\Controllers\Admin\Kategori->delete('65')
+#7 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kategori))
+#8 C:\xampp\htdocs\restoran-ci4\ci4\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restoran-ci4\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
