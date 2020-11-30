@@ -6,7 +6,12 @@
 
     if (!empty(session()->getFlashdata('info'))) {
         echo '<div class="alert alert-danger" role="alert">';
-        echo session()->getFlashdata('info');
+        $error = session()->getFlashdata('info');
+        foreach ($error as $key => $value) {
+            echo $key . " => " . $value;
+            echo "</br>";
+        }
+
         echo '</div>';
     }
 
@@ -14,7 +19,7 @@
 </div>
 
 <div class="col">
-    <h3>Insert Data</h3>
+    <h3>Update Data</h3>
 </div>
 
 

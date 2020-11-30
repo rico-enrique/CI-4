@@ -6,7 +6,12 @@
 
     if (!empty(session()->getFlashdata('info'))) {
         echo '<div class="alert alert-danger" role="alert">';
-        echo session()->getFlashdata('info');
+        $error = session()->getFlashdata('info');
+        foreach ($error as $key => $value) {
+            echo $key . " => " . $value;
+            echo "</br>";
+        }
+
         echo '</div>';
     }
 
@@ -34,7 +39,7 @@
         </div>
         <div class="form-group">
             <label for="harga">Harga</label>
-            <input class="form-control" type="number" name="harga" required>
+            <input class="form-control" type="text" name="harga" required>
         </div>
         <div class="form-group">
             <label for="gambar">Gambar</label>

@@ -80,9 +80,16 @@ class Menu extends BaseController
         ];
 
         $model = new Menu_M();
-        $model->insert($data);
-        $file->move('./upload');
-        return redirect()->to(base_url("/admin/menu"));
+
+        if ($model->insert($data) === false) {
+            $error = $model->errors();
+            session()->setFlashdata('info', $error);
+            return redirect()->to(base_url("/admin/menu/create"));
+        } else {
+            $file->move('./upload');
+            return redirect()->to(base_url("/admin/menu"));
+        }
+
 
 
         // if ($model->insert($_POST) === false) {
@@ -132,9 +139,15 @@ class Menu extends BaseController
             'harga'      => $this->request->getPost('harga'),
         ];
 
-        $model = new Menu_M();
-        $model->update($id, $data);
-        return redirect()->to(base_url("/admin/menu"));
+        $model = new Menu_M();;
+
+        if ($model->update($id, $data) === false) {
+            $error = $model->errors();
+            session()->setFlashdata('info', $error);
+            return redirect()->to(base_url("/admin/menu/find/$id"));
+        } else {
+            return redirect()->to(base_url("/admin/menu/"));
+        }
     }
 
     public function option()
@@ -153,7 +166,7 @@ class Menu extends BaseController
     {
         $model = new Menu_M();
         $model->delete($id);
-        return redirect()->to(base_url("/admin/kategori"));
+        return redirect()->to(base_url("/admin/menu"));
     }
 
     //---------------------------------------------------------------------
