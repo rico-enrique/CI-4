@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -32,7 +32,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->get('dashboard', '\Admin\Login::index');
+$routes->get('dashboard', 'Admin\Login::index');
+$routes->add('keranjang', 'Keranjang::index', ['filter' => 'Seleksi']);
+$routes->add('tambah-keranjang/(:num)', 'Keranjang::tambahKeranjang/$1', ['filter' => 'Seleksi']);
+$routes->add('kurang-pesanan/(:num)', 'Keranjang::min/$1', ['filter' => 'Seleksi']);
+$routes->add('tambah-pesanan/(:num)', 'Keranjang::plus/$1', ['filter' => 'Seleksi']);
+$routes->add('hapus-pesanan/(:num)', 'Keranjang::remove/$1', ['filter' => 'Seleksi']);
+$routes->add('proses-pesan', 'Keranjang::prosesPesan', ['filter' => 'Seleksi']);
+$routes->add('history-pesan', 'Home::history', ['filter' => 'Seleksi']);
 
 // $routes->get('joni/(:any)', 'admin\kategori::selectWhere/$1');
 

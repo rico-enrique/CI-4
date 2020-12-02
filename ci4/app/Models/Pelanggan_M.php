@@ -8,5 +8,5 @@ class Pelanggan_M extends Model
 {
     protected $table = 'tblpelanggan';
     protected $primaryKey = 'idpelanggan';
-    protected $allowedFields = ['aktif'];
+    protected $allowedFields = ['pelanggan', 'alamat', 'telp', 'email', 'password', 'aktif'];
 }

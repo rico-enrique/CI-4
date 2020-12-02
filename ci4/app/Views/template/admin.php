@@ -49,8 +49,8 @@
                                 }
                                 ?>
                             </li>
-                            <li class="nav-item mt-2">
-                                <a href="<?= base_url('admin/login/logout') ?>">Logout</a>
+                            <li class="nav-item">
+                                <a class="btn btn-danger ml-4" href="<?= base_url('admin/login/logout') ?>">Logout</a>
                             </li>
                         </ul>
                     </div>
